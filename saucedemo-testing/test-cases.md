@@ -1,8 +1,8 @@
 |ID|Title|Priority|Status|
 |---|---|---|---|
 |SD-TC-001 |Successful Login in|High|Passed|
-|SD-TC-002 |Invalid Username|Medium|Passed|
-|SD-TC-003 |Invalid Password|Medium|Passed|
+|SD-TC-002 |Login in with invalid Username|Medium|Passed|
+|SD-TC-003 |Login in with invalid Password|Medium|Passed|
 
 ## ID: SD-TC-001 "Successful Login in"
 
@@ -11,7 +11,7 @@
 **Preconditions**: User is on the login-in page (https://www.saucedemo.com); standard_user account is active
 
 **Test Data**:
-- user: standard_user
+- username: standard_user
 - password: secret_sauce
 
 **Steps:**
@@ -33,7 +33,7 @@
 **Preconditions**: User is on the login-in page (https://www.saucedemo.com); standard_user account is active
 
 **Test Data**:
-- user: not_user
+- username: not_user
 - password: secret_sauce
 
 **Steps:**
@@ -56,7 +56,7 @@
 **Preconditions**: User is on the login-in page (https://www.saucedemo.com); standard_user account is active
 
 **Test Data**:
-- user: standard_user
+- username: standard_user
 - password: secret_not
 
 **Steps:**
