@@ -1,6 +1,10 @@
 |ID|Title|Priority|Status|
 |---|---|---|---|
 |SD-TC-001 |Successful Login in|High|Passed|
+|SD-TC-002 |Invalid Username|Medium|Passed|
+|SD-TC-003 |Invalid Password|Medium|Passed|
+
+## ID: SD-TC-001
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
@@ -22,17 +26,16 @@
 
 **Status**: Passed
 
+## ID: SD-TC-002 
 
-|ID|Title|Priority|Status|
-|---|---|---|---|
-|SD-TC-002 |Invalid Username|Medium|Passed|
+**Title**: Invalid Username
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
 **Preconditions**: User is on the login-in page (https://www.saucedemo.com); standard_user account is active
 
 **Test Data**:
-- user: standard_user
+- user: not_user
 - password: secret_sauce
 
 **Steps:**
@@ -47,9 +50,9 @@
 
 **Status**: Passed
 
-|ID|Title|Priority|Status|
-|---|---|---|---|
-|SD-TC-003 |Invalid Password|Medium|Passed|
+## ID: SD-TC-003 
+
+**Title**: Invalid Password
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
@@ -57,7 +60,7 @@
 
 **Test Data**:
 - user: standard_user
-- password: secret_sauce
+- password: secret_not
 
 **Steps:**
 1. Open Login Page
