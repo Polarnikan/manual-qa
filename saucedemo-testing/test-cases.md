@@ -4,7 +4,7 @@
 |SD-TC-002 |Invalid Username|Medium|Passed|
 |SD-TC-003 |Invalid Password|Medium|Passed|
 
-## ID: SD-TC-001
+## ID: SD-TC-001 "Successful Login in"
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
@@ -26,9 +26,7 @@
 
 **Status**: Passed
 
-## ID: SD-TC-002 
-
-**Title**: Invalid Username
+## ID: SD-TC-002 "Invalid Username"
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
@@ -50,9 +48,8 @@
 
 **Status**: Passed
 
-## ID: SD-TC-003 
+## ID: SD-TC-003 "Invalid Password"
 
-**Title**: Invalid Password
 
 **Environment**: Opera GX 133 (Chromium-based), Windows 11
 
