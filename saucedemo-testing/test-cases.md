@@ -88,9 +88,9 @@
 2. Press "add to cart" button for "Sauce labs Backpack" 
 3. Press button with cart image.
 
-**Expectation Results**: System add a product to users cart and displays added products with proper QTY and discriptions.  
+**Expectation Results**: System add a product to users cart and displays added products with proper QTY and descriptions.  
 
-**Actual results**:  System add a product to users cart and displays added products with proper QTY and discriptions.  
+**Actual results**:  System add a product to users cart and displays added products with proper QTY and descriptions.  
 
 **Notes**: Cart view does not display image, only text. (name, discription,qty). See ENH-001 for improvment suggestion. 
 
@@ -107,11 +107,11 @@
 
 **Steps** 
 1. Open catalogue page
-2. Press "add to cart" button for "Sauce labs Backpack" and choose qty/press button cople 3 more times
+2. Press "add to cart" button for "Sauce labs Backpack" and choose qty/press button couple 3 more times
 3. Press button with cart image.
 
-**Expectation Results**: System add a product to users cart and ask for quanty of the item. Cart page displays added products with proper QTY and discriptions. 
+**Expectation Results**: System add a product to users cart and ask for quanty of the item. Cart page displays added products with proper QTY and descriptions. 
 
-**Actuall results**: There is no mechanism to choose nor add more of a same item. After interaction "Add to cart" button changes to "Remove". No further possobility appeared. 
+**Actual results**: There is no mechanism to choose nor add more of a same item. After interaction "Add to cart" button changes to "Remove". No further possibility appeared. 
 
 **Status**: Blocked/Not possible-function does not exist. 
