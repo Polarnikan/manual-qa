@@ -3,6 +3,9 @@
 |SD-TC-001 |Successful Login in|High|Passed|
 |SD-TC-002 |Login in with invalid Username|Medium|Passed|
 |SD-TC-003 |Login in with invalid Password|Medium|Passed|
+|SD-TC-004 |Adding single product to cart qty=1|High|Passed| 
+|SD-TC-005 |Adding single product to cart qty>1|High|Blocked| 
+
 
 ## ID: SD-TC-001 "Successful Login in"
 
@@ -70,3 +73,45 @@
 **Actual Result**: System displays generic error message: "Epic sadface: Username and password do not match any user in this service" (same message shown regardless of whether username or password was incorrect — see UX-001)
 
 **Status**: Passed
+
+## ID: SD-TC-004 "Adding single product to cart qty=1"
+
+**Environment**: Opera GX 133 (Chromium-based), Windows 11
+
+**Preconditions**: User is on the catalogue page (https://www.saucedemo.com/inventory.html); standard_user account is active
+
+**Test Data**:
+- None
+
+**Steps** 
+1. Open catalogue page
+2. Press "add to cart" button for "Sauce labs Backpack" 
+3. Press button with cart image.
+
+**Expectation Results**: System add a product to users cart and displays added products with proper QTY and discriptions.  
+
+**Actual results**:  System add a product to users cart and displays added products with proper QTY and discriptions.  
+
+**Notes**: Cart view does not display image, only text. (name, discription,qty). See ENH-001 for improvment suggestion. 
+
+**Status**: Passed 
+
+## ID: SD-TC-005 "Adding single product to cart qty>1"
+
+**Environment**: Opera GX 133 (Chromium-based), Windows 11
+
+**Preconditions**: User is on the catalogue page (https://www.saucedemo.com/inventory.html); standard_user account is active
+
+**Test Data**:
+- None
+
+**Steps** 
+1. Open catalogue page
+2. Press "add to cart" button for "Sauce labs Backpack" and choose qty/press button cople 3 more times
+3. Press button with cart image.
+
+**Expectation Results**: System add a product to users cart and ask for quanty of the item. Cart page displays added products with proper QTY and discriptions. 
+
+**Actuall results**: There is no mechanism to choose nor add more of a same item. After interaction "Add to cart" button changes to "Remove". No further possobility appeared. 
+
+**Status**: Blocked/Not possible-function does not exist. 
