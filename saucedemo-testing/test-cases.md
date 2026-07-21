@@ -7,7 +7,7 @@
 |SD-TC-005 |Adding single product to cart qty>1|High|Blocked| 
 |SD-TC-006 |Sorting by alphabet |Medium|Passed|
 |SD-TC-007 |Sorting by price |Medium|Passed|
-|SD-TC-008 |Checkout process|High| 
+|SD-TC-008 |Checkout process|High|Passed|
 
 ## ID: SD-TC-001 "Successful Login in"
 
@@ -180,3 +180,5 @@
 **Expectation Results**: User is redirected from page to page step by step. Apon arrival to overview page user see tottal sum and list of items. After finishing payment page displays "Successful" and able to download PDF with order discriptions
 
 **Actual results**: User is redirected from page to page step by step. List of items was valid and contained right sum. Payment and PDF downloaded downloaded.
+
+**Status**: Passed
