@@ -5,7 +5,9 @@
 |SD-TC-003 |Login in with invalid Password|Medium|Passed|
 |SD-TC-004 |Adding single product to cart qty=1|High|Passed| 
 |SD-TC-005 |Adding single product to cart qty>1|High|Blocked| 
-
+|SD-TC-006 |Sorting by alphabet |Medium|Passed|
+|SD-TC-007 |Sorting by price |Medium|Passed|
+|SD-TC-008 |Checkout process|High| 
 
 ## ID: SD-TC-001 "Successful Login in"
 
@@ -115,3 +117,66 @@
 **Actual results**: There is no mechanism to choose nor add more of a same item. After interaction "Add to cart" button changes to "Remove". No further possibility appeared. 
 
 **Status**: Blocked/Not possible-function does not exist. 
+
+## ID: SD-TC-006 "Sorting by alphabet "
+
+**Environment**: Opera GX 133 (Chromium-based), Windows 11
+
+**Preconditions**: User is on the catalogue page (https://www.saucedemo.com/inventory.html); standard_user account is active
+
+**Test Data**:
+- None
+
+**Steps** 
+1. Open catalogue page
+2. Press "Filter" button and choose A-Z sorting
+3. Press "Filter" button and choose Z-A sorting
+
+**Expectation Results**: Page displays items assorted by name with a-z/z-a order
+
+**Actual results**: Page displays items assorted by name with a-z/z-a order
+
+**Status**: Passed
+
+## ID: SD-TC-007 "Sorting by price"
+
+**Environment**: Opera GX 133 (Chromium-based), Windows 11
+
+**Preconditions**: User is on the catalogue page (https://www.saucedemo.com/inventory.html); standard_user account is active
+
+**Test Data**:
+- None
+
+**Steps** 
+1. Open catalogue page
+2. Press "Filter" button and choose Low-High sorting
+3. Press "Filter" button and choose High-Low sorting
+
+**Expectation Results**: Page displays items assorted by name with Low-High/High-Low order
+
+**Actual results**: Page displays items assorted by name with Low-High/High-Low order
+
+**Status**: Passed
+
+## ID: SD-TC-008 "Checkout Process"
+
+**Environment**: Opera GX 133 (Chromium-based), Windows 11
+
+**Preconditions**: User is on the cart page (https://www.saucedemo.com/cart.html) ; standard_user account is active
+
+**Test Data**:
+- "Sauce Labs Backpack"; "Sauce Labs Bolt T-Shirt"; "Sauce Labs Bicke Light"; in cart.
+- Name/Surname: Jackson Gardan
+- Zip/Postal Code: 89123
+
+**Steps**:
+1. Open cart page
+2. Press Checkout
+3. Input valid data (Name/surname/zipcode) (https://www.saucedemo.com/checkout-step-one.html)
+4. Press "Continue" button
+5. Press "Finish" Button at Overwiev page (https://www.saucedemo.com/checkout-step-two.html)
+6. Press "Generate order PDF button" at "Checkout-comlete" page (https://www.saucedemo.com/checkout-complete.html)
+
+**Expectation Results**: User is redirected from page to page step by step. Apon arrival to overview page user see tottal sum and list of items. After finishing payment page displays "Successful" and able to download PDF with order discriptions
+
+**Actual results**: User is redirected from page to page step by step. List of items was valid and contained right sum. Payment and PDF downloaded downloaded.
